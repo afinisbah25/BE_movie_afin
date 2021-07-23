@@ -1,0 +1,23 @@
+<h1>Login</h1>
+<% if (messages.error) %>
+<%= messager.error %>
+<% } %>
+<form action="/login" method="POST">
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"
+        required>
+    </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input type="number" id="phone" name="phone"
+        required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+        required>
+    </div>
+    <button type="Submit">Login</button>
+</form>
+<a href="/register">Register</a>
